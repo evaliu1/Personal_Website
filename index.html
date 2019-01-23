@@ -15,6 +15,10 @@
 
     <!-- Custom styles for this template -->
     <link href="css/full-slider.css" rel="stylesheet">
+	
+	<!-- Custom JavaScript for this template -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript" src="javascript/jqScrolling.js"></script>
 
   </head>
 
@@ -30,18 +34,21 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home
+              <a class="nav-link" href="#top">Home
                 <span class="sr-only">(current)</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#aboutme-session">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
+              <a class="nav-link" href="#experience-session">Experience</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#portfolio-session">Portfolio</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link" href="#contact-session">Contact</a>
             </li>
           </ul>
         </div>
@@ -50,6 +57,7 @@
 
     
     <!-- Header -->
+	<div id="top">
     <header class="masthead">
       <div class="container">
         <div class="intro-text">
@@ -58,8 +66,10 @@
         </div>
       </div>
     </header>
+	</div>
 
     <!-- Page Content: About Me -->
+	<div id = "aboutme-session">
     <section class="py-5">
       <div class="container">
         <h1>About Me</h1>
@@ -74,27 +84,219 @@
 					All in all, I'm always <font color="#e55e58">motivated to explore</font> and create the world using my intelligence.</br></br>
         </p>
       </div>
+	  
+	  </br></br>
+	  
+	  <div class="container">
+	  <div class="row">
+		<div class="col-6">
+			<p> 
+						•	<strong>C/C++:</strong> Object-oriented Programing, with the knowledge of firmware development.</br>
+						•	<strong>Python, Java:</strong> scripting languages for system level automation development. </br>
+						• 	<strong>Shell, Bash:</strong> Linux based scripting and operation languages. </br>
+			</p>
+		</div>
+		
+		
+		<div class="col-6">
+			<p> 
+						•	<strong>Network knowledge:</strong> Network Lab Hands-on work experience.</br>
+						•	<strong>Python, Java:</strong> scripting languages for system level automation development. </br>
+						• 	<strong>Shell, Bash:</strong> Linux based scripting and operation languages. </br>
+			</p>
+		</div>
+	  </div>
+	  </div>
+	  
+	  
     </section>
+	</div>
 	
 	<!-- Page Content: Experience -->
 	<div class="colored-session">
+	<div id="experience-session">
 	<section class="py-5">
       <div class="container">
-        <h1>Experience</h1>
-        <p> <br />Engineering isn't about coding programs and wiring electronics. 
-					Engineering is to design, to create, to provide solutions for a better life. It is to think <font color="#e55e58">beyond the expectation</font>
-					and define the future.
-				     	That is why I look further for every project I did, think the connections between technology and application, propose different 
-				approaches and optimize my work by thousands of testing. </br></br>
-					I believe <font color="#e55e58">self-learning</font> is the key to succeeding. 
-					I'm always keen to obtain new knowledge and get myself on top of required skills in a short time. Moreover, I tend to learn more about what I am interested, 
-				combine the knowledge from different related areas and complete projects to practice new learning.
-					All in all, I'm always <font color="#e55e58">motivated to explore</font> and create the world using my intelligence.</br></br>
-        </p>
+	  <h1>Experience</h1>
+		  <div class="row">
+		    <div class="col-3">
+			<br/>
+		    <img src="images/binary.gif" alt="Microchip Logo" width="150" height="170">
+			</div>
+			<div class="col-9">
+				<p> <div class = "experience-header"> <br/>2018. Dec - Present, Architecture Co-Verification Engineer, Microchip</br> </div>
+						•	Develop, execute and document a series of feature tests that will fully validate the operation of the SoC as part of the overall product. </br>
+						•	Build intended use model system solutions and utilize them in end to end system level testing. </br>
+						• 	Script for the automated control of system infrastructure using Python, Java, Shell, Bash and other scripting languages. </br>
+				</p>
+			</div>
+		  </div>
+		  
+		  <br/>
+		  <div class="row">
+			<div class="col-9">
+				<p> <div class = "experience-header"> <br/>2017. Sep – 2018. Dec, Architecture Co-Verification Engineer Co-Op, Microsemi </br> </div>
+						•	Wrote enhanced test cases based on current RTL design using Embedded C, Python and mbs, completed the basic functionality tests for multiple subsystems. </br>
+						•	Analyzed test errors based on the test results, then grouped the tests by similar failing cases, and reported the errors to Product Design team for future investigate. </br>
+						•	Maintained daily testing automation system, helped to add certain features to automation software and tested current design using automation flow in a daily base. </br>
+							
+				</p>
+			</div>
+			<div class="col-3">
+			<br/>
+	        <img src="images/binary.gif" alt="Microchip Logo" width="150" height="170">
+			</div>
+		  </div>
+		  
+		  </br>
+		  <div class="row">
+		    <div class="col-3">
+			<br/>
+
+			</div>
+			<div class="col-9">
+				<p> <div class = "experience-header"> <br/>2015. Apr - 2015. Aug, SQL Database Tester, XJ Traction CORPORATION</br> </div>
+						•	Helped maintain new software platform by debugging errors in a daily base and partially completed production department software system transformation. </br>
+						•	Collected software testing problems from different manufacturing departments, analyzed the causes of all problems and proposed solutions to software developers.</br>
+						•	Gave feedback specified industry requirements by manufacturing technicians to software developing company and enhanced functionality of the system. </br>
+				</p>
+			</div>
+		  </div>
+		  
       </div>
     </section>
 	</div>
+	</div>
 
+
+    <!-- Page Content: PORTFOLIO -->
+	<div id="portfolio-session">
+	<div id="portfolio">
+    <section class="py-5">
+      <div class="container">
+        <h1>Portfolio</h1>
+
+        <div class="row">
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="images/portfolio/01-thumbnail.jpg" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Threads</h4>
+              <p class="text-muted">Illustration</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="images/portfolio/02-thumbnail.jpg" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Explore</h4>
+              <p class="text-muted">Graphic Design</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="images/portfolio/03-thumbnail.jpg" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Finish</h4>
+              <p class="text-muted">Identity</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="images/portfolio/04-thumbnail.jpg" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Lines</h4>
+              <p class="text-muted">Branding</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="images/portfolio/05-thumbnail.jpg" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Southwest</h4>
+              <p class="text-muted">Website Design</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="images/portfolio/06-thumbnail.jpg" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Window</h4>
+              <p class="text-muted">Photography</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+      </div>
+    </section>
+	</div>
+	</div>
+	
+	<!-- Page Content: Experience -->
+	<div class="colored-session">
+	<div id="contact-session">
+	<section class="py-5">
+      <div class="container">
+	  <h1>Contact</h1>
+		<div class = "row">
+		    <div class = "col-3">                     
+			</div>	<br />
+			<div class = "col-6"> 
+						<br /><br />
+				<strong>Email:</strong> wenyul@sfu.ca <br />
+				                        evaliu2046@gmail.com <br/>
+				<strong>Phone:</strong> +1-778-990-9726<br />
+				<strong>Website:</strong> http://www.sfu.ca/~wenyul <br />
+				<strong>Linkedin:</strong> https://www.linkedin.com/in/eva-liu-1820b812a <br />
+				<strong>Address:</strong> 2575 Norcrest Ct, Burnaby, BC, Canada <br />
+				<br /><br />              
+			</div>
+			<div class = "col-3">                     
+			</div>	<br />
+	    </div>
+		  
+      </div>
+    </section>
+	</div>
+	</div>
+	
     <!-- Footer -->
     <footer class="py-5 bg-dark">
       <div class="container">
