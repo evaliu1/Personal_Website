@@ -3,10 +3,10 @@
 
 ## Preview
 
-Learned HTML and CSS programming through Youtube and Udacity course;
-Created a folder structure for the project, created a DOM tree from graphic design for the index page, wrote the corresponding HTML to define the DOM, created CSS style sheet to set the page layout;
-Assigned different classes to HTML elements to give document different style and contained Bootstrap rol-class to separate each section inside CSS file;
-Included JavaScript function to make the navigation bar scroll down to section by itself, tested all pages by putting them online; 
+*Learned HTML and CSS programming through Youtube and Udacity course;
+*Created a folder structure for the project, created a DOM tree from graphic design for the index page, wrote the corresponding HTML to define the DOM, created CSS style sheet to set the page layout;
+*Assigned different classes to HTML elements to give document different style and contained Bootstrap rol-class to separate each section inside CSS file;
+*Included JavaScript function to make the navigation bar scroll down to section by itself, tested all pages by putting them online; 
 
 
 ## Usage
@@ -24,5 +24,5 @@ You must have npm and Gulp installed globally on your machine in order to use th
 
 ## About
 
-This is the second version of my personal website. You can find the first version at here(http://www.evaliu.net/).
+This is the second version of my personal website. You can find the first version at here(https://github.com/evaliu1/website).
 
