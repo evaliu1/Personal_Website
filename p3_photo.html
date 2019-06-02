@@ -83,6 +83,13 @@
 	</br> </br>
 	
 	<script>
+	// When the user clicks anywhere outside of the modal, close it
+	var modal = document.getElementById('myModal');
+	window.onclick = function(event) {
+	  if (event.target == modal) {
+		modal.style.display = "none";
+	  }
+	}
 	// Display Image
     function onClick(element) {
 		document.getElementById("img01").src = element.src;
