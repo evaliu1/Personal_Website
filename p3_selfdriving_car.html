@@ -1,9 +1,15 @@
 <!doctype html>
 
-<html>
+<html lang="en">
 
 <head>
-<title>Project 3-Self Driving Cars</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>Self Driving Cars</title>
+    <link rel="shortcut icon" href="images/eliu.png" />
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -24,10 +30,9 @@
 			
 			<div class = "col-12">
 				</br> <video class = "video_contain" controls autoplay>
-  					<source src="video/output.mp4" type="video/mp4">
-					Your browser does not support the video tag.
-					</video>
-			</div>
+						<source src="video/output.mp4" type="video/mp4">
+					  Your browser does not support the video tag.
+					  </video>
     </div> </br>
 	
 	<div class= "row">
@@ -38,14 +43,19 @@
 		
 		<div class= "descr">
 		<p>
-			Computed the camera calibration matrix and distortion coefficients given a set of chessboard images and applied a distortion correction to raw images; </br>
-			Used color transforms, gradients, etc., to create a thresholded binary image then applied a perspective transform to rectify binary image ("birds-eye view"); </br>
-			Detected lane pixels and fit to find the lane boundary, determined the curvature of the lane and vehicle position with respect to center; </br>
-			Warpped the detected lane boundaries back onto the original image, and outputted visual display of the lane boundaries and numerical estimation of lane curvature and vehicle position. </br>
+			Computed the camera calibration matrix and distortion 
+			coefficients given a set of chessboard images and applied a distortion correction to raw images; </br>
+			Implemented color transforms, gradients, etc., to create a threshold binary image then applied a perspective transform to rectify binary image ("birds-eye view")</br></br>
+			
+			Detected lane pixels and fit to find the lane boundary, determined the curvature of the lane and vehicle position to center the car; </br>
+			Warped the detected lane boundaries back onto the original image, a
+			nd outputted visual display of the lane boundaries and numerical estimation of lane curvature and vehicle position; </br></br>
+			
+			Used AWS EC2 cloud GPU to compile the code. </br></br>
 			 
 			You can find all the source code in my <a href="https://github.com/evaliu2046/CarND-Advanced-Lane-P4/blob/master/LaneFinding.ipynb">Github CarND-Advanced-Lane-P4 page</a>.</br></br>
 		 </p>
-		</div> </br>
+		</div>
 	</div>	
 </div>
 		
@@ -68,43 +78,16 @@
 		<div class= "descr">
 		<p>
 			Performed a Histogram of Oriented Gradients (HOG) feature extraction on a labeled training set of images and train a classifier Linear SVM classifier; </br>
-			Applied a color transform and append binned color features, as well as histograms of color, to the HOG feature vector; </br>
+			Applied a color transform and append binned color features, as well as histograms of color, to the HOG feature vector; </br></br>
 			Implemented a sliding-window technique and used the trained classifier to search for vehicles in images; </br>
 			Ran the pipeline on a video stream (start with the test_video.mp4 and later implement on full project_video.mp4) and created 
-			a heat map of recurring detections frame by frame to reject outliers and follow detected vehicles; </br>
-			Estimated a bounding box for vehicles detected.</br></br>
-			 
+			a heat map of recurring detections frame by frame to reject outliers and follow detected vehicles; </br></br>
+			
+			Estimated a bounding box for vehicles detected. 
 			You can find all the source code in my <a href="https://github.com/evaliu2046/CarND-Vehicle-Detection-P5/blob/master/test.ipynb">Github CarND-Vehicle-Detection-P5</a>.</br>
 		 </p>
+		 <a href="index.html" style="text-decoration:none">Links to the Website</a></br></br>
 		</div> </br> </br>
-	</div>	
-</div>
-		
-<div class = "container">
-	<!-- Third Sub Project -->	
-	<div class= "row">
-			<div class = "col-12">
-				</br> <video class = "video_contain" controls autoplay>
-  					<source src="video/run1.mp4" type="video/mp4">
-					Your browser does not support the video tag.
-					</video>
-			</div>
-    </div> 
-	
-	<div class= "row">
-		<div class= "title">
-				<h4> - Behavioral Cloning Project</h4>
-		</div>
-		
-		<div class= "descr">
-		<p>
-			Used the simulator to collect data of good driving behavior Build; </br>
-			Implemented convolution neural network in Keras that predicts steering angles from images Train and validate the model with a training and validation set Test that the model successfully drives around track one without leaving the road;</br></br>
-			 
-			You can find all the source code in my <a href="https://github.com/evaliu2046/CarND-Behavioral-Cloning-P3/blob/master/test.ipynb">Github CarND-Behavioral-Cloning-P3</a>.</br>
-		 </p>
-			<a href="index.html" style="text-decoration:none">Links to the Website</a></br></br></br>
-		</div>
 	</div>	
 </div>
 
