@@ -39,6 +39,7 @@ header.masthead {
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
+  background-color: #002f5f;
 }
 
 header.masthead .intro-text {
@@ -434,6 +435,14 @@ video{
 	margin-bottom:0;
 }
 
+.blue-colored-session{
+	color: white;
+	opacity: 0.65;
+	background-color: #002f5f;
+	margin-top: 0;
+	margin-bottom:0;
+}
+
 .experience-header{
 	font-size: 18px;
 	font-weight: 500;
@@ -523,7 +532,6 @@ margin-bottom:0;
 background-repeat: no-repeat;
 background-position: right top;
 padding-top:25px;
-margin-bottom:20px;
 -webkit-animation-duration: 3s;
 animation-duration: 3s;
 -webkit-animation-fill-mode: both;
