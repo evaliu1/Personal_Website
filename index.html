@@ -17,9 +17,20 @@
     <!-- Custom styles for this template -->
     <link href="css/full-slider.css" rel="stylesheet">
 	
-	<!-- Custom JavaScript for this template -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	<script type="text/javascript" src="javascript/jqScrolling.js"></script>
+    <!-- Custom JavaScript for this template -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="javascript/jqScrolling.js"></script>
+    <script type="text/javascript">
+    function text(url) {
+      return fetch(url).then(res => res.text());
+    }
+    text('https://www.cloudflare.com/cdn-cgi/trace').then(data => {
+      let ipRegex = /[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}/
+      let ip = data.match(ipRegex)[0];
+      console.log(ip);
+      console.log(data);
+    });
+    </script>
 
   </head>
 
@@ -75,7 +86,7 @@
 
     <!-- Page Content: About Me -->
   <div class="blue-colored-session">
-	<div id = "aboutme-session">
+    <div id = "aboutme-session">
     <section class="py-5">
       <div class="container">
 	  <h1>About Me</h1>
@@ -83,9 +94,7 @@
             It is to think beyond expectation, implement new technology to define the future.
             That is the reason I believe Cloud Computing is the key to future computing services and solutions. </br>
             I am concentrating on developing my cloud-computing skills by self-learning through online resources, 
-            and I am looking forward to build my career based on Cloud services. </br> </br>
-            
-            I believe, to be great is to be greater.
+            and I am looking forward to build my career based on Cloud services. </br>
 						</br>
       </p>
       
