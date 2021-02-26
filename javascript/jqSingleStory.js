@@ -12,19 +12,16 @@ if (typeof console._commandLineAPI !== 'undefined') {
 
 // Extracts high level details of current story
 function getCurrentStoryDetail() {
-
     console.API.clear();
     storyObj = {};
-    storyObj.title = document.getElementsByClassName("graf--title")[0].innerText;
-    storyObj.count = document.getElementsByClassName("js-multirecommendCountButton")[0].innerText;
-    storyObj.name = document.getElementsByClassName("ds-link--styleSubtle")[0].innerText;
-    storyObj.imageUrl = document.getElementsByClassName("avatar-image")[0].src;
-    storyObj.profile = document.getElementsByClassName("ui-xs-clamp2")[0].innerText;
-    storyObj.readTime = document.getElementsByClassName("readingTime")[0].getAttribute("title");   
+    storyObj.title = document.getElementsByClassName("graf--title")[0];
+    storyObj.count = document.getElementsByClassName("js-multirecommendCountButton")[0];
+    storyObj.name = document.getElementsByClassName("ds-link--styleSubtle")[0];
+    storyObj.imageUrl = document.getElementsByClassName("avatar-image")[0];
+    storyObj.profile = document.getElementsByClassName("ui-xs-clamp2")[0];
+    storyObj.readTime = document.getElementsByClassName("readingTime")[0];   
     storyObj.url = storyPath;
-
     console.save(storyObj);
-
 }
 
 console.save = function (data, filename) {
