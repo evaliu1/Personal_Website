@@ -19,20 +19,26 @@
 	
     <!-- Custom JavaScript for this template -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script type="text/javascript" src="javascript/jqSingleStory.js"></script>
     <script type="text/javascript" src="javascript/jqScrolling.js"></script>
     <script type="text/javascript">
-    function text(url) {
-      return fetch(url).then(res => res.text());
-    }
-    text('https://www.cloudflare.com/cdn-cgi/trace').then(data => {
-      let ipRegex = /[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}/
-      let ip = data.match(ipRegex)[0];
-      console.log(ip);
-      console.log(data);
-    });
+ 	function text(url) {
+  	  return fetch(url).then(res => res.text());
+	}
+	text('https://www.cloudflare.com/cdn-cgi/trace').then(data => {
+	  const ip_addr = data.split(/\r?\n/)[2];
+          const usage_data = data.split(/\r?\n/)[5];
+          const geo_loc = data.split(/\r?\n/)[8];
+	  const user_data = { ip_addr, geo_loc, usage_data };
+	  const options = {
+            method: 'POST',
+	    headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(user_data)
+	  };
+	  fetch('/api', options);
+	});   
     </script>
-
   </head>
 
   <body>
@@ -165,7 +171,39 @@
 
 			</div>
 			<div class="col-md-9 col-sm-12">
-				<p> <div class = "experience-header"> <br/>2018. Dec - Present, Architecture Co-Verification Engineer, Microchip</br> </div>
+				<p> <div class = "experience-header"> <br/>2021. Feb - Present, Cloud Operations Engineer, State Street</br> </div>
+						•	Deploy large scale web applications such as Jira, Jenkins, ServiceNow server, Git server, Prometheus software, and Grafana software to multiple AWS Accounts via CloudFormation Stack/StackSet. </br>
+						•	Work with AWS computing services such as EC2, Elastic Load Balancer, AutoScaling Groups, Lambda functions, experience with debugging complicated web applications deployment. </br>
+						• 	Build AWS Database such as AWS RDS, Aurora, developing custom resources enabling additional features for RDS global database. </br>
+						• 	Develop applications to automatically create Security Group templates via Jinja template engine, create DynamoDB table as the Security Group database to record application requests, write python Lambda API to support database/user interaction. </br>
+				</p>
+			</div>
+		  </div>
+		  
+		  <br/>
+	          <div class="row">
+		    <div class="col-md-3">
+			<br/>
+
+			</div>
+			<div class="col-md-9 col-sm-12">
+				<p> <div class = "experience-header"> <br/>2019. Sep - 2021. Feb, Jr. Cloud Operations Engineer, State Street</br> </div>
+						•	Deploy functional applications via AWS CloudFormation Stacks/StackSet and perform system analysis of various systems in the organization level. </br>
+						•	Build AWS templates testing CICD pipelines in Jenkins system and utilize the testing automation based on git commit changes. </br>
+						• 	Take responsibility in operational monitoring and incident support as well as creating the development of tools to aid in the automation of processes. </br>
+						• 	Work with scripting languages such as Python, shell, bash, Java, and network protocols (e.g., TCP, IP). </br>
+				</p>
+			</div>
+		  </div>
+		  
+		  <br/>
+	          <div class="row">
+		    <div class="col-md-3">
+			<br/>
+
+			</div>
+			<div class="col-md-9 col-sm-12">
+				<p> <div class = "experience-header"> <br/>2018. Dec - 2019. Sep, Architecture Co-Verification Engineer, Microchip</br> </div>
 						•	Develop, execute and document a series of feature tests that will fully validate the operation of the SoC as part of the overall product. </br>
 						•	Build intended use model system solutions and utilize them in end to end system level testing. </br>
 						• 	Script for the automated control of system infrastructure using Python, Java, Shell, Bash and other scripting languages. </br>
@@ -173,27 +211,6 @@
 			</div>
 		  </div>
 		  
-		  <br/>
-		  <div class="row">
-			<div class="col-md-3">
-			<br/>
-
-			</div>
-			
-			<div class="col-md-9 col-sm-12">
-				<p> <div class = "experience-header"> <br/>2017. Sep – 2018. Dec, Architecture Co-Verification Engineer Co-Op, Microchip </br> </div>
-						•	Analyzed test errors based on the test results, then grouped the tests by similar failing cases, and reported the errors to Product Design team for future investigate. </br>
-						•	Maintained daily testing automation system, helped to add certain features to automation software and tested current design using automation flow in a daily base. </br>
-							
-				</p>
-			</div>
-
-		  </div>
-		  
-		  </br>
-		  <div class="row">
-		    <div class="col-md-3">
-			<br/>
 		  
       </div>
     </section>
